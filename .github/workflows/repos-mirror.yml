@@ -26,5 +26,5 @@ jobs:
          account_type: org
          clone_style: ssh
          force_update: true
-         static_list: "mindcv,mindocr,mindnlp"
+         static_list: "mindone,mindcv,mindocr,mindnlp,mindaudio,mindyolo"
          debug: true
