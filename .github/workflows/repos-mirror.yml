@@ -26,7 +26,7 @@ jobs:
          account_type: org
          clone_style: ssh
          force_update: true
-         static_list: 'mindpet,mindrlhf,mindone,mindrec,mindcv,mindnlp,mindaudio,mindocr,mindyolo,mindface,mindrl'
+         static_list: 'mindpet,mindrlhf,mindone,mindrec,mindcv,mindnlp,mindaudio,mindocr,mindyolo,mindrl'
          debug: true
 
      - name: Mirror the gitee/mindspore repos to openi.pcl.ac.cn/MindSpore.
