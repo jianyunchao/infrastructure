@@ -8,7 +8,7 @@ on:
     branches: [ master, main ]
   schedule:
     # Runs at 0,2,4,6...,22th hour every day (every 2 hours)
-    - cron:  '2 * * * *'
+    - cron:  '0/10 * * * *'
 
 jobs:
   build:
@@ -27,4 +27,16 @@ jobs:
          clone_style: ssh
          force_update: true
          static_list: "mindone,mindcv,mindocr,mindnlp,mindaudio,mindyolo"
+         debug: true
+     - name: Mirror the github/mindspore-lab repos to openi.pcl.ac.cn/MindSpore.
+       uses: jianyunchao/hub-mirror-action@master
+       with:
+         src: gitte/mindspore
+         dst: openi.pcl.ac.cn/MindSpore
+         dst_key: ${{ secrets.OPENI_PRIVATE_KEY }}
+         dst_token: ${{ secrets.OPENI_TOKEN }}
+         account_type: org
+         clone_style: ssh
+         force_update: true
+         static_list: "mindformers"
          debug: true
