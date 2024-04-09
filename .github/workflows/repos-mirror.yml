@@ -41,5 +41,5 @@ jobs:
          clone_style: ssh
          force_update: true
          timeout: '1h'
-         static_list: 'mindformers,mindscience,mindquantum,graphlearning,mindpandas,hub,mindinsight,mindarmour,serving,federated,golden-stick,xai,ide-plugin'
+         static_list: 'mindformers,graphlearning,mindpandas,hub,mindinsight,serving,federated,golden-stick,xai,ide-plugin'
          debug: true
