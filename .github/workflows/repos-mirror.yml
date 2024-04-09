@@ -26,6 +26,7 @@ jobs:
          account_type: org
          clone_style: ssh
          force_update: true
+         timeout: '1h'
          static_list: 'mindpet,mindrlhf,mindone,mindrec,mindcv,mindnlp,mindaudio,mindocr,mindyolo,mindface,mindrl'
          debug: true
 
@@ -39,5 +40,6 @@ jobs:
          account_type: org
          clone_style: ssh
          force_update: true
+         timeout: '1h'
          static_list: 'mindformers,mindscience,mindquantum,graphlearning,mindpandas,hub,mindinsight,mindarmour,serving,federated,golden-stick,xai,ide-plugin'
          debug: true
