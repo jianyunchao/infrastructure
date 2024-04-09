@@ -30,14 +30,14 @@ jobs:
          debug: true
 
      - name: Mirror the gitee/mindspore repos to github/mindspore-lab.
-        uses: jianyunchao/hub-mirror-action@master
-        with:
-          src: gitee/mindspore
-          dst: openi.pcl.ac.cn/MindSpore
-          dst_key: ${{ secrets.OPENI_PRIVATE_KEY }}
-          dst_token:  ${{ secrets.OPENI_TOKEN }}
-          account_type: org
-          clone_style: ssh
-          force_update: true
-          static_list: 'mindformers'
-          debug: true
+       uses: jianyunchao/hub-mirror-action@master
+       with:
+         src: gitee/mindspore
+         dst: openi.pcl.ac.cn/MindSpore
+         dst_key: ${{ secrets.OPENI_PRIVATE_KEY }}
+         dst_token:  ${{ secrets.OPENI_TOKEN }}
+         account_type: org
+         clone_style: ssh
+         force_update: true
+         static_list: 'mindformers'
+         debug: true
